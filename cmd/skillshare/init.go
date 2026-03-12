@@ -1234,6 +1234,7 @@ func tryPullAfterRemoteSetup(sourcePath, remoteURL string) bool {
 // This allows users to have skills stored in a subdirectory of their repo and not the root
 // Returns a string representing the name of the subdirectory, empty if none was selected
 func useSourceSubdir() string {
+	fmt.Println()
 	fmt.Println("  Specifying a subdirectory as the source will store skills in the subdirectory (e.g. skills/) instead of in the root")
 	fmt.Println()
 	fmt.Print("  Specify a subdirectory as the source (e.g. skills)? [y/N]: ")
